@@ -1,0 +1,771 @@
+@charset "UTF-8";
+
+/* Resetting the CSS to improve crossbrowser support. Source http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 License: none (public domain)*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html, body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*A) Hiding the divs belonging to the mobile version*/
+	
+#mobNavBarLeft, #mobHeader, #mobile{
+	display:none;
+}
+
+/*B) Adding the fonts and common styling tools that I'll be using during the styling process*/
+	
+@font-face{
+	font-family:NexaLight;
+	src:url(../assets/fonts/NexaLight.otf);
+}
+@font-face{
+	font-family:NexaBold;
+	src:url(../assets/fonts/NexaBold.otf);
+}
+.bold{
+	font-weight:bolder;
+}
+.italic{
+	font-style:italic;
+}
+.underline{
+	text-decoration:underline;
+}
+.blue{
+	color:#48ABFF;
+}
+.center{
+	text-align:center;
+}
+
+/*C) Styling the body and all the common style elements in all the pages*/
+	
+body{
+	background-color:#EDF5F8;
+	font-size:16px;
+	font-family:"NexaLight", "Helvetica", "Arial", "sans-serif";		
+}
+a{
+	text-decoration:none;
+}
+li{
+	list-style-type:none;
+}
+p{
+	text-indent:50px;
+	margin-bottom:16px;
+}
+
+/*STYLING THE DIVS THAT CONFORM THE WEB*/
+
+	/*1. This will style the main Div or wrapper that is containing the other two inside it*/
+	
+	#wrapper{
+		width:1292px;
+		height:690px;
+		-webkit-border-radius:10px;
+		-moz-border-radius:10px;
+		border-radius:10px;
+		background-color:#838383;
+		position:relative;
+		margin:0px auto;
+		margin-top:1em;
+		}
+	
+		/*1.1. This will style the navigation bar, placed at the left of the page*/
+		
+		#navBar{
+			font:12.95px "NexaBold", "Helvetica", "Arial", "sans-serif";				
+			width:94px;	
+			height:655px;
+			-webkit-border-radius:10px;
+			-moz-border-radius:10px;
+			border-radius:10px;					
+			background-color:#EDF5F8;
+			position:absolute;	
+			display:inline-block;
+			margin-top:17px;
+			margin-left:20px;
+		}
+		#navBar ul{
+			margin-top:1px;
+			text-align:center;
+			position:relative;
+		}
+		
+			/*1.1.1. This styles the links in the navigation bar and the images attached to each link*/
+			
+			#navBar li a{
+				color:#000;
+				display:block;
+				position:relative;
+			}
+			.nav{
+				padding-top:67px;
+				text-align:center;
+				margin-left:-9px;
+				display:block;
+			}
+			.nav:hover{
+				color:#48ABFF;
+			}
+			#home, #background, #philosophy, #resume, #gallery, #blog, #press, #contact{
+				height:67px;
+				display:block
+			}
+			#background, #philosophy, #resume, #gallery, #blog, #press, #contact{
+				margin-top:15px;
+			}
+			#philosophy, #background, #resume, #blog{
+				margin-left:15px;
+			}
+			#home, #background{
+				margin-left:10px;
+			}			
+			#home{
+				background:url(../assets/icons/Desktop/Black/home.png) no-repeat;
+			}
+			#home:hover{
+				background: url(../assets/icons/Desktop/Blue/homeblue.png) no-repeat;
+			}
+			#background{
+				background:url(../assets/icons/Desktop/Black/background.png) no-repeat;
+			}
+			#background:hover{
+				background:url(../assets/icons/Desktop/Blue/backgroundblue.png) no-repeat;
+			}
+			#philosophy{
+				background:url(../assets/icons/Desktop/Black/philosophy.png) no-repeat;
+			}
+			#philosophy:hover{
+				background:url(../assets/icons/Desktop/Blue/philosophyblue.png) no-repeat;
+			}
+			#resume{
+				background:url(../assets/icons/Desktop/Black/resume.png) no-repeat;
+			}
+			#resume:hover{
+				background:url(../assets/icons/Desktop/Blue/resumeblue.png) no-repeat;
+			}
+			#gallery{
+				background:url(../assets/icons/Desktop/Black/gallery.png) no-repeat;
+				margin-left:5px;
+			}
+			#gallery:hover{
+				background:url(../assets/icons/Desktop/Blue/galleryblue.png) no-repeat;
+			}
+			#blog{
+				background:url(../assets/icons/Desktop/Black/blog.png) no-repeat;
+			}
+			#blog:hover{
+				background:url(../assets/icons/Desktop/Blue/blogblue.png) no-repeat;
+			}
+			#press{
+				background:url(../assets/icons/Desktop/Black/press.png) no-repeat;
+				margin-left:20px;    
+			}
+			#press:hover{
+				background:url(../assets/icons/Desktop/Blue/pressblue.png) no-repeat;
+			}
+			#contact{
+				background:url(../assets/icons/Desktop/Black/contact.png) no-repeat;
+				margin-left:2px;
+			}
+			#contact:hover{
+				background:url(../assets/icons/Desktop/Blue/contactblue.png) no-repeat;
+			}
+
+		/*1.2. This is the Div where the main content will be placed into*/
+		
+		#mainFrame{	
+			width:1138px;
+			height:650px;
+			-webkit-border-radius:10px;
+			-moz-border-radius:10px;
+			border-radius:10px;
+			background-color:#EDF5F8;
+			position:absolute;
+			display:inline-block;
+			margin-top:1.5em;
+			margin-left:8.3em;
+		}
+			/*1.2.1. This styles the logo and social buttons placed inside the header div*/
+			#header{
+				display:block;
+			}
+			#logo{
+				margin-top:20px;
+				margin-left:20px;
+				display:inline-block;
+			}
+			#logoLink{
+				width:454px;
+				height:115px;
+				background:url(../assets/logo/desktop/logoPalo.png) top left no-repeat
+;
+				display:inline-block;
+			}
+			.social{
+				width:54px;
+				height:54px;
+				display:inline-block;
+			}
+			#facebook, #twitter {
+				width:54px;
+				height:54px;
+				display:inline-block;
+				position:absolute;
+				margin-left:1em;
+			}
+			#facebook{
+				background:url(../assets/icons/Desktop/Black/facebook.png) top center no-repeat;
+			}
+			#facebook:hover{
+				background:url(../assets/icons/Desktop/Blue/facebook.png) top center no-repeat;
+			}
+			#twitter {
+				background:url(../assets/icons/Desktop/Black/twitter.png) top center no-repeat;
+			}
+			#twitter:hover {		
+				background:url(../assets/icons/Desktop/Blue/twitter.png) top center no-repeat;
+			}
+
+			/*1.2.2. Styling the columns hosting text and/or images through the page*/
+
+			.leftColumn{
+				width:450px;
+				height:406px;
+				margin-bottom:200px;
+				margin-left:50px;
+				display:inline-block;
+				float:left;
+			}
+			.leftColumn h1, .rightColumn h1, .centerColumn h1, #bothColumns h1{
+				font-family:"NexaBold", "Helvetica", "Arial", "sans-serif";
+				text-align:center;
+				display: block;
+    			font-size: 2em;
+    			margin-top: 0.4em;
+    			margin-bottom: 0.5em;
+    			margin-left: 0;
+    			margin-right: 0;
+    			font-weight: bold;
+			}
+			.leftColumn h3, #bothColumns h3{
+				text-align:center;
+				display: block;
+    			font-size: 1.17em;
+    			margin-bottom: 0.5em;
+    			margin-left: 0;
+    			margin-right: 0;
+    			font-weight: bold;
+			}
+			.rightColumn{
+				width:450px;
+				float:right;
+				margin-right:50px;
+				display:inline-block;
+			}
+			.leftColumn p img, .rightColumn p img{
+				float:right;
+			}
+			.leftColumn a, .rightColumn a{
+   	 			color: #A4A4A4;
+			}
+			.leftColumn a:hover, .rightColumn a:hover{
+    			color: #48ABFF;
+			}
+			.centerColumn{
+				width:395px;
+				display:inline-block;
+				margin:0px auto;
+			}
+			
+			/*1.2.2. Fine-adjustment of the Home page*/
+			
+			#homeRight{
+				margin-top:-40px;
+				margin-right:-20px;
+			}
+			
+			/*1.2.3. Fine-adjustment of the Background page*/
+			#rightBackground{
+				margin-top:60px;
+			}		
+			
+			/*1.2.4. Fine-adjustment of the images of the Philosophy Page*/
+			
+			#leftImages, #rightImages{
+				width:300px;
+				display:inline-block;
+			}
+			#leftImages{
+				float:left;
+				margin-left:50px;
+				margin-right:10px;
+			}
+			#rightImages{
+				float:right;
+				margin-right:50px;
+			}
+			#img1Philosophy , #img3Philosophy{
+				margin-bottom:20px;
+			}
+			#philosophyColumn{
+				width:400px;
+				height:406px;
+				margin-bottom:200px;
+				margin-left:10px;
+				display:inline-block;
+				float:left;
+			}
+
+			/*1.2.5. Fine-adjustment of the text on the Resume Page*/
+
+			.marginParag{
+				height:20px;
+			}
+			#leftResume p, #rightResume p{
+				text-indent:0px;
+				margin-bottom:0.1em;				
+			}
+			#leftResume ul, #rightResume ul{
+				margin-top:0.5em;				
+			}
+			#rightResume{		
+				margin-top:94px;
+			}
+			/*1.2.6. Fine-adjustment of the images in the Gallery Page*/
+
+			.grid{
+				margin-right:30px;
+				margin-bottom:11px;
+			}
+			.grid2{
+				margin-bottom:11px;
+			}
+			#bigImage{
+				margin-top:-105px;
+				margin-right:50px;
+			}		
+			
+			/*1.2.7. Fine-adjustment of the text on the Blog Page*/
+
+			#rightBlog{
+				margin-top:-90px;
+			}							
+							
+			/*1.2.8. Fine-adjustment of the Press Page*/
+
+			#rigthPress{
+				margin-top:-90px;
+			}
+			#img1, #img2, #img3, #img4, #img5, #img6{
+				position:absolute;
+			}
+			#img1, #img6{
+				margin-left:200px;
+			}
+			#img1{
+				margin-bottom:130px;
+			}
+			#img2{
+				margin-left:20px;
+				margin-top:100px;
+			}
+			#img3{
+				margin-left:430px;
+				margin-top:130px;
+			}
+			#img4{
+				margin-left:120px;
+			}
+			#img5{
+				margin-top:200px;
+			}
+			#img6{
+				margin-top:350px;
+			}
+
+			/*1.2.9. Fine-adjustment of the Contact Page*/							
+
+			#leftContact, #rightContact h1{
+				text-align:center;
+			}
+			#leftContact p{
+				text-indent:0px;
+			}
+			#leftContact h1{
+				margin-bottom:110px;			
+			}
+			form{
+   	 			background-color:#B4B4B4;
+				margin:auto;
+				position:relative;
+				width:450px;
+				height:450px;
+				line-height:24px;
+				-webkit-border-radius:10px;
+				-moz-border-radius:10px;
+				border-radius:10px;
+				padding:10px;
+				border:2px solid #838383;
+				margin:auto;
+			}
+			.textFormMargin{
+				margin-left:37px;
+			}
+			input{
+				display:block;
+				margin:auto;
+				width:375px;
+				border:1px solid #838383;
+				height:25px;
+			}	
+			#enquiry{
+				width:375px;
+				height:50px;
+				display:block;
+				margin:auto;
+				overflow:scroll;
+			}
+			#button{
+				margin-top:10px;
+				background-color:#838383;
+			}
+	
+
+/* Here begins the style for the Portrait mode of the Iphone 5*/
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) 
+and (orientation : portrait) 
+{
+/*RESETTING THE CSS AND GIVING SOME STYLE TO THE BODY*/
+html, body, div, span, applet, object, iframe, blockquote, pre, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small,  strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas,  details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+body{
+	font-size:0.8em;
+}
+
+/*HIDING THE DIVS OF THE DESKTOP LAYOUT THAT WON'T BE NEEDED IN THE MOBILE VERSION*/
+
+#navBar, #header, #homeRight, #backgroundImg1, #backgroundImg2, #img1Philosophy, #img2Philosophy, #img3Philosophy, #img4Philosophy, #currentImg, #desktop{
+	display:none;
+}
+
+/*STYLING THE NAVIGATION BARS*/
+#mobNavBarLeft{
+	width:17.81% !important;	
+	height:568px !important;							
+	background-color:#EDF5F8;
+	position:relative !important;	
+	display:inline-block !important;
+}
+#mobNavBarLeft{
+	float:left;
+}
+#mobNavBarLeft ul{
+	width:57px !important;
+	display:block !important;
+	list-style-type:none !important;
+	position:relative !important;
+}
+#mobNavBarLeft ul{
+	float:right;
+}
+#mobNavBarLeft li{
+	margin-bottom:15px;
+}
+#mobNavBarLeft li a{
+	display:block;
+}
+#mobHome, #mobBackground, #mobPhilosophy, #mobResume, #mobGallery,  #mobBlog,  #mobPress, #mobContact{
+	height:57px;
+}
+#mobHome{
+	background:url(../assets/icons/Mobile/black/mobHome.png) no-repeat;
+}
+#mobHome:hover{
+	background: url(../assets/icons/Mobile/blue/mobHomeBlue.png) no-repeat;
+}
+#mobBackground{
+	background:url(../assets/icons/Mobile/black/mobBackground.png) no-repeat;
+}  
+#mobBackground:hover{
+	background:url(../assets/icons/Mobile/blue/mobBackgroundBlue.png) no-repeat;
+}
+#mobPhilosophy{
+	background:url(../assets/icons/Mobile/black/mobPhilosophy.png) no-repeat;
+}
+#mobPhilosophy:hover{
+	background:url(../assets/icons/Mobile/blue/mobPhilosophyBlue.png) no-repeat;
+}
+#mobResume{
+	background:url(../assets/icons/Mobile/black/mobResume.png) no-repeat;
+}
+#mobResume:hover{
+	background:url(../assets/icons/Mobile/blue/mobResumeBlue.png) no-repeat;
+}
+#mobGallery{
+	background:url(../assets/icons/Mobile/black/mobGallery.png) no-repeat;
+}
+#mobGallery:hover{
+	background:url(../assets/icons/Mobile/blue/mobGalleryBlue.png) no-repeat;
+}
+#mobBlog{
+	background:url(../assets/icons/Mobile/black/mobBlog.png) no-repeat;
+}
+#mobBlog:hover{
+	background:url(../assets/icons/Mobile/blue/mobBlogBlue.png) no-repeat;
+}
+#mobPress{
+	background:url(../assets/icons/Mobile/black/mobPress.png) no-repeat;
+}
+#mobPress:hover{
+	background:url(../assets/icons/Mobile/blue/mobPressBlue.png) no-repeat;
+}
+#mobContact{
+	background:url(../assets/icons/Mobile/black/mobContact.png) no-repeat;
+}
+#mobContact:hover{
+	background:url(../assets/icons/Mobile/blue/mobContactBlue.png) no-repeat;
+}
+
+/*STYLING THE WRAPPER THAT CONTAINS THE HEADER AND THE MAIN FRAME WHERE CONTENT IS DISPLAYED*/
+#wrapper{
+	width:82.19% !important;
+	height:568px !important;
+	display:inline-block !important;
+	background-color:#838383;
+	position:relative !important;
+	float:right;
+	margin-top:0em;
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	border-radius:0px;
+}
+
+/*STYLING THE HEADER*/
+#mobHeader{
+	width:95%;
+	height:50px;
+	background-color:#EDF5F8;
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	border-radius:10px;
+	display:block;
+	margin:5px auto 5px auto;
+	position:relative;
+}
+#mobHeaderContainer{
+	width:303px;
+	height:50px;
+	margin:auto;
+}
+#mobHeaderContainer ul{
+	height:50px;
+}
+#mobHeaderContainer ul li{
+	display:inline;
+}
+#mobHeader ul li a{
+	display:inline-block;
+}
+#mobLogo{
+	width:193px;
+	height:36px;
+	background:url(../assets/logo/mobile/mobLogoPalo.png) no-repeat;
+	display:inline-block;
+	position:relative;
+	top:10px;
+	left:30px;
+}
+
+/*STYLING THE MAIN FRAME*/
+#mainFrame{
+	width:95%;
+	height:85%;
+	background-color:#EDF5F8;
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	border-radius:10px;
+	display:block;
+	margin:5px auto 5px auto;
+	position:relative;
+}
+.leftColumn, .rightColumn{
+	width:95%;
+	height:auto;
+	position:relative;
+	display:inline-block;
+	margin-left:0px;
+	margin-bottom:0px;
+}
+.rightColumn{
+	margin:15% 3% 3%;
+}
+.leftColumn h1, .rightColumn h1, #bothColumns h1{
+	font-size:2em;
+}
+.leftColumn h3, .rightColumn h3, #bothColumns h3{
+	font-size:1em;
+}
+.leftColumn ul, .rightColumn ul{
+	margin-top:5%;
+	margin-left:10%;
+}
+.leftColumn ul li, .rightColumn ul li{
+	margin-bottom:0.5%;
+}
+#bothColumns{
+	display:inline-block;
+	height:95%;
+	margin:0px auto;
+	overflow: scroll;
+}
+
+/*FINE-ADJUSTMENT OF THE HOME PAGE*/
+#homeLeft{
+	overflow:scroll;
+}
+
+/*FINE-ADJUSTMENT OF THE BACKGROUND PAGE*/
+#rightBackground{
+margin-top:0px;
+}		
+
+/*FINE-ADJUSTMENT OF THE PHILOSOPHY PAGE*/
+#philosophyColumn {
+	width: auto;
+	height: auto;
+	margin-bottom:0px;
+	margin-left: 10px;
+	display: inline-block;
+	float: left;
+}
+/*FINE-ADJUSTMENT OF THE GALLERY PAGE*/
+.grid{
+margin-right:10px;
+}
+#mobile{
+	display:block;
+	text-indent:0px;
+}
+#images{
+	width:90%;
+	height:90%;
+	position:relative;
+	left:20px;
+	display:inline-block;
+	overflow:scroll;
+}
+
+/*FINE-ADJUSTMENT OF THE BLOG PAGE*/
+#rightBlog{
+	margin-top:0%;
+}
+
+/*FINE-ADJUSTMENT OF THE RESUME PAGE*/
+#rightResume{
+	margin-top:0px;
+}
+
+/*FINE-ADJUSTMENT OF THE PRESS PAGE*/
+#img2, #img3, #img5, #img6{
+	width:50%;
+}
+#img1, #img4{
+	width:75%;
+}
+#img1, #img2, #img3, #img4, #img5, #img6{
+	margin:0px;
+	left:50px;
+}
+#img2{
+	top:300px;
+}
+#img3{
+	top:500px;
+}
+#img4{
+	top:700px;
+}
+#img5{
+	top:900px;
+}
+#img6{
+	top:1100px;
+}
+
+/*FINE-ADJUSTMENT OF THE CONTACT PAGE*/
+#leftContact h3{
+	margin-top:-17%;
+}
+form{
+	display:block;
+	padding:2%;
+	width:auto !important;
+	height:auto !important;
+	margin:auto auto 5%;
+}
+input, #enquiry{
+	width:80%;
+	display:block;
+	margin:auto;
+}
+input{
+	height:1.4em;
+}
+#button{
+	height:1.8em;
+	margin-top:10px;
+	background-color:#838383;
+}
+#leftcontact{
+	width:80%;
+}
+}

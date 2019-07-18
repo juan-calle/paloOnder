@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width">
+<title>Palo Onder || Gallery</title>
+<script type="text/javascript" src="../js/script.js"></script>
+<link href="../css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+	<div id="mobNavBarLeft"><!-- A* Left Navigation Bar for mobile layout. Hidden by default and activated through media queries. Child of Body and sibling of Wrapper and mobNavBarRight-->
+    	<ul>
+            	<li><a id="mobHome" href="../index.html" accesskey="1"></a></li>
+                <li><a id="mobBackground" href="background.html" accesskey="2"></a></li>
+                <li><a id="mobPhilosophy" href="philosophy.html" accesskey="3"></a></li>
+                <li><a id="mobResume" href="resume.html" accesskey="4"></a></li>
+				<li><a id="mobGallery" href="gallery.html" accesskey="5"></a></li>
+                <li><a id="mobBlog" href="blog.html" accesskey="6"></a></li>
+                <li><a id="mobPress" href="press.html" accesskey="7"></a></li>
+                <li><a id="mobContact" href="contact.html" accesskey="8"></a></li>
+		</ul>
+    </div>
+    
+	<div id="wrapper"><!-- 1. A div wrapping the rest of elements of the page. Child of Body and sibling of mobNavBarLeft and mobNavBarRight -->
+		<div id="navBar"> <!-- 1.1. This is the navigation bar, placed at the left of the page. Child of Wrapper and sibling of mobHeader and mainFrame. Will be hidden when media queries take action-->
+			<ul>
+				<li><a id="home" href="../index.html" accesskey="1"><span class="nav">HOME</span></a></li>
+                <li><a id="background" href="background.html" accesskey="2"><span class="nav">BACKGROUND</span></a></li>
+                <li><a id="philosophy" href="philosophy.html" accesskey="3"><span class="nav">PHILOSOPHY</span></a></li>
+                <li><a id="resume" href="resume.html" accesskey="4"><span class="nav">RESUME</span></a></li>
+                <li><a id="gallery" href="gallery.html" accesskey="5"><span class="nav">GALLERY</span></a></li>
+                <li><a id="blog" href="blog.html" accesskey="6"><span class="nav">BLOG</span></a></li>
+                <li><a id="press" href="press.html" accesskey="7"><span class="nav">PRESS</span></a></li>
+                <li><a id="contact" href="contact.html" accesskey="8"><span class="nav">CONTACT</span></a></li>
+			</ul>
+		</div>
+        
+		<div id="mobHeader"><!-- B* Header for mobile layout. Hidden by default and activated through media queries. Child of Wrapper and sibling of navBar and mainFrame-->
+        	<div id="mobHeaderContainer">
+				<ul>
+                	<li><a id="mobLogo" href="../index.html"></a></li>
+				</ul>  
+        	</div>        
+		</div>
+        
+		<div id="mainFrame"><!-- 1.2. This is the div where the main content will be placed into-->
+			<div id="header"><!-- 1.2.1 This div contains the common elements logo and social buttons. Will be hidden when media queries take action-->
+				<div id="logo"><a id="logoLink" href="../index.html"></a></div>
+				<div class="social"><a id="facebook" href="https://www.facebook.com/pages/Palo-Onder-floral-designerconsultant-and-artist/449003891837186" accesskey="9"></a></div>
+                <div class="social"><a id="twitter" href="https://twitter.com/PaloOnder" accesskey="0"></a></div>
+			</div>
+          
+          	<div class="leftColumn" id="images">
+                <h1>GALLERY</h1>
+               	<p id="desktop">Click on the images to magnify them on the right</p>
+                <p id="mobile">This is a little showcase of my jobs</p>
+                <a href="#" id="image1" onclick="changeImage('galleryBig1')"><img class="grid" src="../assets/images/desktop/gallery1" alt="Image of a framed greenery with a bouquet of pink roses attached to the top-right corner" /></a>
+                <a href="#" id="image2" onclick="changeImage('galleryBig2')"><img class="grid" src="../assets/images/desktop/gallery2" alt="Image of  multicolour garland attached to a staircase railing" /></a>
+                <a href="#" id="image3" onclick="changeImage('galleryBig3')"><img class="grid" src="../assets/images/desktop/gallery3" alt="Image of a vass filled with dried flowers." /></a>
+                <a href="#" id="image4" onclick="changeImage('galleryBig4')"><img class="grid2" src="../assets/images/desktop/gallery4" alt="Three beautiful balls made with pale-pink roses and white hydrangeas" /></a>
+                <a href="#" id="image5" onclick="changeImage('galleryBig5')"><img class="grid" src="../assets/images/desktop/gallery5" alt="Exotic arrangement of white and yellow orchids in a rectangular glass vass" /></a>
+                <a href="#" id="image6" onclick="changeImage('galleryBig6')"><img class="grid" src="../assets/images/desktop/gallery6" alt="Huge hanging ball made of white and red roses, white hydrangeas and hanging creeper " /></a>
+                <a href="#" id="image7" onclick="changeImage('galleryBig7')"><img class="grid" src="../assets/images/desktop/gallery7" alt="Another example of orchid arrangement, this time only using white flowers" /></a>
+                <a href="#" id="image8" onclick="changeImage('galleryBig8')"><img class="grid2" src="../assets/images/desktop/gallery8" alt="Another example of orchid arrangement, this time using white and pink flowers" /></a>
+                <a href="#" id="image9" onclick="changeImage('galleryBig9')"><img class="grid" src="../assets/images/desktop/gallery9" alt="Exotic but simple arrangement made with three big stems of red Heliconias" /></a>
+                <a href="#" id="image10" onclick="changeImage('galleryBig10')"><img class="grid" src="../assets/images/desktop/gallery10" alt="Impressive tree made of flowers emerging from the midle of a rounded table and spreading to the ceiling" /></a>
+                <a href="#" id="image11" onclick="changeImage('galleryBig11')"><img class="grid" src="../assets/images/desktop/gallery11" alt="Arrangement of green orchids and red amaryllis in a rectangular glass vass" /></a>
+                <a href="#" id="image12" onclick="changeImage('galleryBig12')"><img class="grid2" src="../assets/images/desktop/gallery12" alt="Small arrangement made with green orchids in a yellow vass" /></a>
+            </div>  
+ 
+           	<div class="rightColumn" id="bigImage">
+            	<img id="currentImg" src="../assets/images/desktop/galleryBig1" alt=""/>
+            </div>  
+    	</div>
+	</div>
+</body>
+</html>

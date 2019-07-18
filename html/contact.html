@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width">
+<title>Palo Onder || Contact</title>
+<script type="text/javascript" src="../js/script.js"></script>
+<link href="../css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="container">
+	<div id="mobNavBarLeft"><!-- A* Left Navigation Bar for mobile layout. Hidden by default and activated through media queries. Child of Body and sibling of Wrapper and mobNavBarRight-->
+    	<ul>
+            	<li><a id="mobHome" href="../index.html" accesskey="1"></a></li>
+                <li><a id="mobBackground" href="background.html" accesskey="2"></a></li>
+                <li><a id="mobPhilosophy" href="philosophy.html" accesskey="3"></a></li>
+                <li><a id="mobResume" href="resume.html" accesskey="4"></a></li>
+				<li><a id="mobGallery" href="gallery.html" accesskey="5"></a></li>
+                <li><a id="mobBlog" href="blog.html" accesskey="6"></a></li>
+                <li><a id="mobPress" href="press.html" accesskey="7"></a></li>
+                <li><a id="mobContact" href="contact.html" accesskey="8"></a></li>
+		</ul>
+    </div>
+    
+	<div id="wrapper"><!-- 1. A div wrapping the rest of elements of the page. Child of Body and sibling of mobNavBarLeft and mobNavBarRight -->
+		<div id="navBar"> <!-- 1.1. This is the navigation bar, placed at the left of the page. Child of Wrapper and sibling of mobHeader and mainFrame. Will be hidden when media queries take action-->
+			<ul>
+				<li><a id="home" href="../index.html" accesskey="1"><span class="nav">HOME</span></a></li>
+                <li><a id="background" href="background.html" accesskey="2"><span class="nav">BACKGROUND</span></a></li>
+                <li><a id="philosophy" href="philosophy.html" accesskey="3"><span class="nav">PHILOSOPHY</span></a></li>
+                <li><a id="resume" href="resume.html" accesskey="4"><span class="nav">RESUME</span></a></li>
+                <li><a id="gallery" href="gallery.html" accesskey="5"><span class="nav">GALLERY</span></a></li>
+                <li><a id="blog" href="blog.html" accesskey="6"><span class="nav">BLOG</span></a></li>
+                <li><a id="press" href="press.html" accesskey="7"><span class="nav">PRESS</span></a></li>
+                <li><a id="contact" href="contact.html" accesskey="8"><span class="nav">CONTACT</span></a></li>
+			</ul>
+		</div>
+        
+		<div id="mobHeader"><!-- B* Header for mobile layout. Hidden by default and activated through media queries. Child of Wrapper and sibling of navBar and mainFrame-->
+        	<div id="mobHeaderContainer">
+				<ul>
+                	<li><a id="mobLogo" href="../index.html"></a></li>
+				</ul>  
+        	</div>        
+		</div>
+        
+		<div id="mainFrame"><!-- 1.2. This is the div where the main content will be placed into-->
+			<div id="header"><!-- 1.2.1 This div contains the common elements logo and social buttons. Will be hidden when media queries take action-->
+				<div id="logo"><a id="logoLink" href="../index.html"></a></div>
+				<div class="social"><a id="facebook" href="https://www.facebook.com/pages/Palo-Onder-floral-designerconsultant-and-artist/449003891837186" accesskey="9"></a></div>
+                <div class="social"><a id="twitter" href="https://twitter.com/PaloOnder" accesskey="0"></a></div>
+			</div>
+         	<div id="bothColumns">          
+                <div class="leftColumn" id="leftContact">
+                    <h1>CONTACT</h1>
+                    <h3>PALO ONDER</h3>
+                    <p>25, Buckland Court. N1 6TY, LONDON</p>
+                    <p>Phone : 00447925732162</p>
+                    <p>onderpalo@gmail.com</p>
+                </div>
+                
+                <div class="rightColumn" id="rightContact">
+                    <form name="myForm" action="thanks.html" onsubmit="return validateForm()" method="post">
+                        <h1>Contact Form:</h1>
+                        <span class="textFormMargin">First name:</span><input type="text" id="fname" onkeypress="changeNormal(this)"/>
+                        <span class="textFormMargin">Last name:</span><input type="text" id="lname" onkeypress="changeNormal(this)"/>
+                        <span class="textFormMargin">Email address:</span><input type="text" id="email" onkeypress="changeNormal(this)"/>
+                        <span class="textFormMargin">Confirm your email:</span><input type="text" id="confirmEmail" onkeypress="changeNormal(this)"/>
+                        <span class="textFormMargin">Telephone number:</span><input type="text" id="telephone" onkeypress="changeNormal(this)"/>  
+                        <span class="textFormMargin">Your enquiry:</span><textarea rows="4" cols="1" name="enquiry" id="enquiry" onkeypress="changeNormal(this)"></textarea>
+                        <input type="submit" id="button" value="Submit"/>
+                    </form>
+                </div>
+         	</div>          
+  		</div>      
+    </div>
+</div>
+</body>
+</html>
